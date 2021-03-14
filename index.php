@@ -18,7 +18,7 @@
     <ul id="musiclist">
         <?php
         $musicSizeExt = "b";
-        $musicFiles = glob("songs/*.mp3");
+        $musicFiles = glob("webpage/songs/*.mp3");
         foreach ($musicFiles as $music) {
             $musicName = basename($music);
             $musicSize = filesize($music);
